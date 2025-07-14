@@ -1,1 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Progreso Carrera - Josefina</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
+  <h1>Progreso de Materias - Ingeniería Informática</h1>
+
+  <!-- Primer Año -->
+  <section class="anio">
+    <h2>Primer Año</h2>
+    <div class="semestre">
+      <h3>1er Semestre</h3>
+      <div class="materia"><input type="checkbox" id="analisis1"><label for="analisis1">Análisis Matemático I</label></div>
+      <div class="materia"><input type="checkbox" id="algebra"><label for="algebra">Álgebra Lineal</label></div>
+      <div class="materia"><input type="checkbox" id="prog1"><label for="prog1">Programación I</label></div>
+      <div class="materia"><input type="checkbox" id="tallerIng"><label for="tallerIng">Taller de Ingeniería</label></div>
+      <div class="materia"><input type="checkbox" id="tallerGAL"><label for="tallerGAL">Taller de GAL</label></div>
+      <div class="materia"><input type="checkbox" id="tallerAM1"><label for="tallerAM1">Taller de AM1</label></div>
+      
+    </div>
+
+    <div class="semestre">
+      <h3>2do Semestre</h3>
+      <div class="materia"><input type="checkbox" id="bdd1"><label for="bdd1">Diseño de Base de Datos I</label></div>
+      <div class="materia"><input type="checkbox" id="analisis2" data-previa="analisis1"><label for="analisis2">Análisis Matemático II</label></div>
+      <div class="materia"><input type="checkbox" id="algebraNumerica" data-previa="algebra"><label for="algebraNumerica">Álgebra Lineal Numérica</label></div>
+      <div class="materia"><input type="checkbox" id="fisica"><label for="fisica">Física</label></div>
+      <div class="materia"><input type="checkbox" id="antropologia"><label for="antropologia">Antropología</label></div>
+      <div class="materia"><input type="checkbox" id="electivaLibre"><label for="electivaLibre">Electiva</label></div>
+    </div>
+  </section>
+
+  <!-- Talleres y Materias Complementarias -->
+  <section class="anio">
+    <h2>Complementarias</h2>
+    <div class="semestre">
+      <div class="materia"><input type="checkbox" id="eco"><label for="eco">Economía</label></div>
+      <div class="materia"><input type="checkbox" id="estadistica"><label for="estadistica">Estadística Aplicada</label></div>
+      <div class="materia"><input type="checkbox" id="antropologia"><label for="antropologia">Antropología</label></div>
+      <div class="materia"><input type="checkbox" id="tallerGAL"><label for="tallerGAL">Taller de GAL</label></div>
+<div class="materia"><input type="checkbox" id="tallerAM1"><label for="tallerAM1">Taller de AM1</label></div>
+    </div>
+  </section>
+
+  <!-- Segundo Año -->
+  <!-- ... (resto del documento sigue igual) ... -->
+
+<script src="script.js"></script>
+</body>
+</html>
