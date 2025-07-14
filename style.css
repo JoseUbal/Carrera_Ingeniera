@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fa;
+    padding: 20px;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #1a3c5a;
+}
+
+.anio {
+    margin-bottom: 40px;
+    border: 2px solid #d6e0ea;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.materia {
+    padding: 10px 15px;
+    margin: 6px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    user-select: none;
+    font-size: 16px;
+    border: 1px solid transparent;
+}
+
+/* Estado bloqueado (gris) */
+.materia.bloqueada {
+    background-color: #d3d3d3;
+    color: #888;
+    cursor: not-allowed;
+}
+
+/* Estado habilitado pero no tildado (azul grisáceo claro) */
+.materia.habilitada {
+    background-color: #a9c4d8;
+    color: #1a3c5a;
+}
+
+/* Estado tildado (azul oscuro + tachado) */
+.materia.aprobada {
+    background-color: #3b6f94;
+    color: white;
+    text-decoration: line-through;
+    font-style: italic;
+}
